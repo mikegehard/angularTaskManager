@@ -13,9 +13,9 @@
  */
 
 module.exports = {
-  drawRoutes: function(app) {
-    app.get('/greeting', function (req, res) {
-      res.json({id:1,content:"Hello, World!"});
-    });
-  }
+    drawRoutes: function (app) {
+        app.get('/greeting', function (req, res) {
+            res.json({id: 1, content: "Hello, World!"});
+        });
+    }
 };
