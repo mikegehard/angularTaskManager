@@ -23,7 +23,7 @@ module.exports = function (lineman) {
         //   }
         // }
         removeTasks: {
-            common: ["coffee"]
+            common: ["coffee", "handlebars", "jst"]
         },
 
         server: {
