@@ -1,4 +1,4 @@
-angular.module("app", []).run(function($rootScope) {
+var app = angular.module("app", []).run(function($rootScope) {
   // adds some basic utilities to the $rootScope for debugging purposes
   $rootScope.log = function(thing) {
     console.log(thing);
@@ -9,6 +9,12 @@ angular.module("app", []).run(function($rootScope) {
   };
 });
 
-angular.module("app").controller('MainController', ['$scope', function($scope) {
-    $scope.greeting = 'Hello!';
+app.factory('greeting', function() {
+    return {
+        content: "Hello, World!"
+    };
+});
+
+app.controller('MainController', ['$scope', 'greeting', function($scope, greeting) {
+    $scope.greeting = greeting.content;
 }]);
