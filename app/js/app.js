@@ -10,11 +10,13 @@ var app = angular.module("app", []).run(function ($rootScope) {
 });
 
 app.factory('greeting', function () {
-    return {
-        content: "Hello, World!"
+    return function (name) {
+        return {
+            content: "Hello, " + name + "!"
+        };
     };
 });
 
 app.controller('MainController', ['$scope', 'greeting', function ($scope, greeting) {
-    $scope.greeting = greeting.content;
+    $scope.greeting = greeting("Mike").content;
 }]);
