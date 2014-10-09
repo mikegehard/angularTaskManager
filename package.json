@@ -1,19 +1,14 @@
 {
-  "name": "lineman-angular-template",
+  "name": "TaskManager",
   "title": "An HTML/JS/CSS app using Angular.JS",
   "version": "0.0.1",
   "private": true,
-  "author": {
-    "name": "John Doe",
-    "company": "ACME, Inc."
-  },
+  "author": "Mike Gehard",
   "devDependencies": {
-    "coffee-script": "^1.6.3",
-    "jasmine-given": "^2.6.2",
-    "lineman": "^0.34.0",
-    "lineman-angular": "^0.3.0",
-    "lineman-less": "0.0.1",
-    "protractor": "^1.2.0-beta1"
+    "coffee-script": "1.6.3",
+    "lineman": "0.34.2",
+    "lineman-angular": "0.3.0",
+    "protractor": "1.3.1"
   },
   "scripts": {
     "start": "lineman run",

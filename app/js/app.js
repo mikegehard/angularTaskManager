@@ -1,4 +1,4 @@
-angular.module("app", ["ngResource", "ngRoute"]).run(function($rootScope) {
+angular.module("app", []).run(function($rootScope) {
   // adds some basic utilities to the $rootScope for debugging purposes
   $rootScope.log = function(thing) {
     console.log(thing);
@@ -8,3 +8,7 @@ angular.module("app", ["ngResource", "ngRoute"]).run(function($rootScope) {
     alert(thing);
   };
 });
+
+angular.module("app").controller('MainController', ['$scope', function($scope) {
+    $scope.greeting = 'Hello!';
+}]);
