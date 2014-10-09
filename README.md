@@ -28,3 +28,7 @@ To run the end-to-end tests:
 3. Make sure you have chrome installed.
 4. `lineman run` from 1 terminal window
 5. `lineman grunt spec-e2e` from another terminal window
+
+## Deploying to CF
+
+1. `bin/deploy-to-cf`

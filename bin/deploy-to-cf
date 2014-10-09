@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+lineman clean
+lineman build
+
+cf push angularTaskManager -p dist -m 64M -b https://github.com/cloudfoundry-community/staticfile-buildpack.git
